@@ -1,4 +1,4 @@
-### leetcode
+### LeetCode
 
 - [two sum](./two-sum)
 
