@@ -6,3 +6,4 @@
 
 - [fibonacci](./fibonacci)
 - [longest-valid-parentheses](./longest-valid-parentheses)
+- [prime-number](./prime-number)
