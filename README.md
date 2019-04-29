@@ -1,6 +1,7 @@
 ### LeetCode
 
 - [two sum](./two-sum)
+- [count primes](./count-primes)
 
 ### Dynamic Programming
 
