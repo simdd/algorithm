@@ -7,18 +7,18 @@ func primeNumber(o int) []int {
 		arr = append(arr, 2)
 	}
 
-	for i:=3; i<o; i++ {
+	for i := 3; i < o; i++ {
 		res := false
 
 		for _, v := range arr {
-			if i % v == 0 {
+			if i%v == 0 {
 				res = true
 				break
 			}
 		}
 
 		if res == false {
-			arr= append(arr, i)
+			arr = append(arr, i)
 		}
 	}
 
