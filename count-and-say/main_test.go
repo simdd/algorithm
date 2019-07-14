@@ -1,4 +1,4 @@
-package count_and_say
+package problem
 
 // 1.     1
 // 2.     11

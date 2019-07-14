@@ -1,4 +1,4 @@
-package count_primes
+package problem
 
 import "testing"
 import "fmt"

@@ -1,6 +1,6 @@
-package fibonacci
+package problem
 
-import 	"testing"
+import "testing"
 import "fmt"
 
 // TestFibonacci1 46.148s

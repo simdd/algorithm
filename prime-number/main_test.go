@@ -1,4 +1,4 @@
-package prime_number
+package problem
 
 import "testing"
 import "fmt"

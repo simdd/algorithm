@@ -1,4 +1,4 @@
-package prime_number
+package problem
 
 func primeNumber(o int) []int {
 	var arr []int

@@ -1,4 +1,4 @@
-package fibonacci
+package problem
 
 func fibonacci1(n int) int {
 	if n <= 2 {
