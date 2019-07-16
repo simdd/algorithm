@@ -2,6 +2,7 @@
 
 - [two sum](./two-sum)
 - [count primes](./count-primes)
+- [count and say](./count-and-say)
 
 ### Dynamic Programming
 
