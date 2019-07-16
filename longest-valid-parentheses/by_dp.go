@@ -15,6 +15,8 @@ func byDp(s string) int {
 			if o[i-1] == "(" {
 				if i-2 < 0 {
 					dp = append(dp, 2)
+				} else if o[i-2] == "(" {
+					dp = append(dp, dp[i-1])
 				} else {
 					dp = append(dp, dp[i-2]+2)
 				}
