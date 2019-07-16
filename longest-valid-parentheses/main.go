@@ -4,9 +4,12 @@ import (
 	"strings"
 )
 
-func longestValidParenthesesByCount(s string) []string {
+func longestValidParenthesesByCount(s string) int {
 	origin := strings.Split(s, "")
-	maxlen := 0
+
+	maxlenleft := 0
+	maxlenright := 0
+
 	left := 0
 	right := 0
 
@@ -18,14 +21,40 @@ func longestValidParenthesesByCount(s string) []string {
 		}
 
 		if right > left {
-			if maxlen < right+left {
-				maxlen = right + left
-			}
-
 			right = 0
 			left = 0
+		} else if right == left {
+			if maxlenleft < left+right {
+				maxlenleft = right + left
+			}
 		}
 	}
 
-	return origin
+	left = 0
+	right = 0
+
+	for i := len(origin) - 1; i >= 0; i-- {
+		v := origin[i]
+
+		if v == "(" {
+			left++
+		} else if v == ")" {
+			right++
+		}
+
+		if left > right {
+			right = 0
+			left = 0
+		} else if left == right {
+			if maxlenright < right+left {
+				maxlenright = left + right
+			}
+		}
+	}
+
+	if maxlenleft < maxlenright {
+		return maxlenright
+	}
+
+	return maxlenleft
 }

@@ -6,6 +6,6 @@ import (
 )
 
 func TestLongestValidParenthesesByCount(t *testing.T) {
-	ret := longestValidParenthesesByCount("(())))(()")
+	ret := longestValidParenthesesByCount("()((((())))")
 	fmt.Println(ret)
 }
