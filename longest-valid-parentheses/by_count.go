@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-func longestValidParenthesesByCount(s string) int {
+func byCount(s string) int {
 	origin := strings.Split(s, "")
 
 	var maxlenleft int
