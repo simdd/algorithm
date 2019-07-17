@@ -6,6 +6,6 @@ import (
 )
 
 func TestByDp(t *testing.T) {
-	ret := byDp("()(()")
+	ret := byDp("(()())")
 	fmt.Println(ret)
 }
