@@ -7,5 +7,6 @@
 ### Dynamic Programming
 
 - [fibonacci](./fibonacci)
-- [longest-valid-parentheses](./longest-valid-parentheses)
 - [prime-number](./prime-number)
+- [longest-valid-parentheses](./longest-valid-parentheses)
+- [climbing-stairs](./climbing-stairs)
