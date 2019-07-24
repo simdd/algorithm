@@ -11,3 +11,8 @@
 - [longest-valid-parentheses](./longest-valid-parentheses)
 - [climbing-stairs](./climbing-stairs)
 - [maximum-average-subarray-1](./maximum-average-subarray-1)
+- [todo: decode-ways](./decode-ways)
+
+### Sort
+
+- [bubble-sort](./bubble-sort)
