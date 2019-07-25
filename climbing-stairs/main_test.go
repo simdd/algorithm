@@ -1,10 +1,14 @@
 package problem
 
 import (
-	"fmt"
 	"testing"
 )
 
 func TestMain(t *testing.T) {
-	fmt.Println(main(4))
+	ret := main(4)
+	target := 5
+
+	if ret != target {
+		t.Error("TestMain ", ret)
+	}
 }

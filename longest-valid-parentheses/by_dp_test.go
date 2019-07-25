@@ -1,11 +1,13 @@
 package problem
 
 import (
-	"fmt"
 	"testing"
 )
 
 func TestByDp(t *testing.T) {
 	ret := byDp("(()())")
-	fmt.Println(ret)
+
+	if ret != 6 {
+		t.Error("TestByDp: ", ret)
+	}
 }

@@ -2,11 +2,23 @@ package problem
 
 import (
 	"algorithm/utils"
-	"fmt"
 	"testing"
 )
 
 func TestMain(t *testing.T) {
-	ret := utils.IntSliceEqualBCE(main2([]int{1, 3, 2, 4}), []int{1, 2, 3})
-	fmt.Println(ret)
+	ret := main([]int{1, 3, 2, 4})
+	target := []int{1, 2, 3, 4}
+
+	if !utils.IntSliceEqualBCE(ret, target) {
+		t.Error("TestMain ", ret)
+	}
+}
+
+func TestMain2(t *testing.T) {
+	ret := main2([]int{1, 3, 2, 4})
+	target := []int{1, 2, 3, 4}
+
+	if !utils.IntSliceEqualBCE(ret, target) {
+		t.Error("TestMain ", ret)
+	}
 }

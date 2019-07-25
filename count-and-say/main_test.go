@@ -1,11 +1,14 @@
 package problem
 
 import (
-	"fmt"
 	"testing"
 )
 
 func TestCountAndSay(t *testing.T) {
 	ret := countAndSay(5)
-	fmt.Println(ret)
+	target := "111221"
+
+	if ret != target {
+		t.Error("TestCountAndSay  ", ret)
+	}
 }

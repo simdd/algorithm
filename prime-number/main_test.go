@@ -2,7 +2,6 @@ package problem
 
 import (
 	"algorithm/utils"
-	"fmt"
 	"testing"
 )
 
@@ -13,8 +12,9 @@ func TestPrimeNumber(t *testing.T) {
 		2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
 	}
 
-	res := utils.IntSliceEqualBCE(primeNumber(origin), target)
+	ret := utils.IntSliceEqualBCE(primeNumber(origin), target)
 
-	fmt.Printf("%v\n", res)
-	fmt.Printf("%v", primeNumber(origin))
+	if !ret {
+		t.Error("TestPrimeNumber: ", ret)
+	}
 }

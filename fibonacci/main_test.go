@@ -1,14 +1,21 @@
 package problem
 
 import "testing"
-import "fmt"
 
 // TestFibonacci1 46.148s
 func TestFibonacci1(t *testing.T) {
-	fmt.Printf("%d \n", fibonacci1(50))
+	ret := fibonacci1(10)
+
+	if ret != 89 {
+		t.Error("TestFibonacci1 ", ret)
+	}
 }
 
 // TestFibonacci2 0.005s
 func TestFibonacci2(t *testing.T) {
-	fmt.Printf("%d \n", fibonacci2(50))
+	ret := fibonacci2(10)
+
+	if ret != 89 {
+		t.Error("TestFibonacci1 ", ret)
+	}
 }

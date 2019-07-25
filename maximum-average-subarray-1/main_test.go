@@ -1,10 +1,13 @@
 package problem
 
 import (
-	"fmt"
 	"testing"
 )
 
 func TestMain(t *testing.T) {
-	fmt.Println(main([]int{-1}, 1))
+	ret := main([]int{-1, 1, 2, 3}, 2)
+
+	if ret != 2.5 {
+		t.Error("TestMain ", ret)
+	}
 }
