@@ -1,6 +1,7 @@
 package utils
 
-func intSliceEqualBCE(a, b []int) bool {
+// IntSliceEqualBCE 判断两 int 数组相等
+func IntSliceEqualBCE(a, b []int) bool {
 	if len(a) != len(b) {
 		return false
 	}
