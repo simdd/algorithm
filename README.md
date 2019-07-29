@@ -16,3 +16,4 @@
 ### Sort
 
 - [bubble-sort](./bubble-sort)
+- [insertion-sort)](./insertion-sort)
