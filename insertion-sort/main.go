@@ -8,22 +8,23 @@ func main(o []int) []int {
 	for i := 1; i < len(o); i++ {
 		e := false
 
-		for j := len(ret) - 1; j == 0; j-- {
+		for j := len(ret) - 1; j >= 0; j-- {
 			if o[i] > ret[j] {
 				if len(ret) == 1 {
 					*a = append(ret, o[i])
 				} else {
 					*a = append(ret[:j+1], ret[j:]...)
-					ret[j] = o[i]
+					ret[j+1] = o[i]
 				}
 
 				e = true
+				break
 			}
+		}
 
-			if !e {
-				*a = append(ret[:1], ret[0:]...)
-				ret[0] = o[i]
-			}
+		if !e {
+			*a = append(ret[:1], ret[0:]...)
+			ret[0] = o[i]
 		}
 	}
 
