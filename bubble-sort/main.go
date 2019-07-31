@@ -6,9 +6,7 @@ func main(o []int) []int {
 	for position > 0 {
 		for i := 1; i <= position; i++ {
 			if o[i] < o[i-1] {
-				tmp := o[i-1]
-				o[i-1] = o[i]
-				o[i] = tmp
+				o[i-1], o[i] = o[i], o[i-1]
 			}
 		}
 
@@ -26,9 +24,7 @@ func main2(o []int) []int {
 
 		for i := 1; i <= position; i++ {
 			if o[i] < o[i-1] {
-				tmp := o[i-1]
-				o[i-1] = o[i]
-				o[i] = tmp
+				o[i-1], o[i] = o[i], o[i-1]
 				change = true
 			}
 		}
