@@ -17,9 +17,7 @@ func fibonacci2(n int) int {
 	n2 := 3
 
 	for i := 4; i <= n; i++ {
-		tmp := n1
-		n1 = n2
-		n2 = tmp + n1
+		n1, n2 = n2, n1+n2
 	}
 
 	return n2
