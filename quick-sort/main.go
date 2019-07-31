@@ -30,11 +30,8 @@ func quick(arr []int, left int, right int) {
 		}
 	}
 
-	if i != left+1 && j != right {
-		arr = append(arr[left+1:i+1], arr[i:right+1]...)
-		arr[i] = pivot
-	}
+	arr = append(arr[left+1:i], arr[i-1:right+1]...)
+	arr[i-1] = pivot
 
-	quick(arr, left, i)
-	quick(arr, i+1, right)
+	quick(arr, left, i-1)
 }
