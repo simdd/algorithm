@@ -6,8 +6,8 @@ import (
 )
 
 func TestMain(t *testing.T) {
-	ret := main([]int{3, 5, 1, 2, 6, 2, 4})
-	target := []int{1, 2, 2, 3, 3, 3, 4}
+	ret := main([]int{3, 5, 1, 2, 2, 2, 2})
+	target := []int{1, 2, 2, 2, 2, 3, 5}
 
 	if !utils.IntSliceEqualBCE(ret, target) {
 		t.Error("TestMain ", ret)

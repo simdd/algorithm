@@ -9,10 +9,35 @@ func main(o []int) []int {
 	return o
 }
 
-func quick(arr []int, left int, right int) {
-	pivot := arr[left]
-	i := left + 1
-	j := right
+func quick(arr []int, l int, r int) {
+	if l >= r {
+		return
+	}
+
+	pivot := arr[l]
+	i := l + 1
+
+	for j := l + 1; j <= r; j++ {
+		if pivot > arr[j] {
+			arr[i], arr[j] = arr[j], arr[i]
+			i++
+		}
+	}
+
+	arr[l], arr[i-1] = arr[i-1], arr[l]
+
+	quick(arr, l, i-2)
+	quick(arr, i, r)
+}
+
+func quick1(arr []int, l int, r int) {
+	if l >= r {
+		return
+	}
+
+	pivot := arr[l]
+	i := l + 1
+	j := r
 
 	for {
 		for arr[i] < pivot {
@@ -30,8 +55,7 @@ func quick(arr []int, left int, right int) {
 		}
 	}
 
-	arr = append(arr[left+1:i], arr[i-1:right+1]...)
-	arr[i-1] = pivot
-
-	quick(arr, left, i-1)
+	arr[l], arr[i-1] = arr[i-1], arr[l]
+	quick(arr, l, i-2)
+	quick(arr, i, r)
 }
