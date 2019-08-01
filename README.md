@@ -18,3 +18,4 @@
 - [bubble-sort](./bubble-sort)
 - [insertion-sort](./insertion-sort)
 - [quick-sort](./quick-sort)
+- [selection-sort](./selection-sort)
