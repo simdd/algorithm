@@ -19,3 +19,4 @@
 - [insertion-sort](./insertion-sort)
 - [quick-sort](./quick-sort)
 - [selection-sort](./selection-sort)
+- [doing: merge-sort](./merge-sort)
