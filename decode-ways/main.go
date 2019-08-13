@@ -39,16 +39,20 @@ func main(s string) int {
 	}
 
 	for i := 2; i < len(o); i++ {
-		if o[i] == 0 && (o[i-1] == 0 || o[i-1] > 2) {
+		if o[i] == 0 {
+			if o[i-1] == 1 || o[i-1] == 2 {
+				return dp[i-2]
+			}
+
 			return 0
 		}
 
-		if o[i-1] > 0 && o[i-1] < 3 && o[i] > 0 && o[i] < 7 {
-			dp[i] = dp[i-1] + dp[i-2]
-		} else if o[i] == 0 {
-			dp[i] = dp[i-2]
+		if o[i-1] == 0 || o[i-1] > 6 {
+			return dp[i-1]
+		} else if o[i-1]*10+o[i] > 26 {
+			return dp[i-1]
 		} else {
-			dp[i] = dp[i-1]
+			return dp[i-1] + dp[i-2]
 		}
 	}
 
