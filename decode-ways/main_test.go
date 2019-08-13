@@ -1,10 +1,13 @@
 package problem
 
 import (
-	"fmt"
 	"testing"
 )
 
 func TestMain(t *testing.T) {
-	fmt.Println(main("10"))
+	ret := main("110")
+
+	if ret != 1 {
+		t.Error("Decode Ways ", ret)
+	}
 }
