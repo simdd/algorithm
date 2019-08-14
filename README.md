@@ -3,6 +3,7 @@
 - [two sum](./two-sum)
 - [count primes](./count-primes)
 - [count and say](./count-and-say)
+- [reverse-integer](./reverse-integer)
 
 ### Dynamic Programming
 
