@@ -4,6 +4,7 @@
 - [count primes](./count-primes)
 - [count and say](./count-and-say)
 - [reverse-integer](./reverse-integer)
+- [palindrome-number](./palindrome-number)
 
 ### Dynamic Programming
 
