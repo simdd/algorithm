@@ -5,7 +5,7 @@
 - [count and say](./count-and-say)
 - [reverse-integer](./reverse-integer)
 - [palindrome-number](./palindrome-number)
-- [roman-to-integer](./roman-to-integer)
+- [todo: roman-to-integer](./roman-to-integer)
 
 ### Dynamic Programming
 
